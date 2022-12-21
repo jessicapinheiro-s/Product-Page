@@ -24,13 +24,38 @@ body{
     background-position: center;
     background-attachment: fixed;*/
 }
+.header{
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding: 10px;
+}
+.header .logo{
+    color: #fff;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.header .menu{
+    width: 100%;
+}
+.header .menu .menu-item{
+    color: #fff;
+}
+.header .menu ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .produto{
     margin: 0 auto;
     display: grid;
     grid-template-rows: 70% 30%;
-    grid-template-columns: 15% 1fr 30% ;
+    grid-template-columns: 1fr 15% 30% ;
     grid-template-areas: 
-    'info-basic imagem informacao'
+    'imagem info-basic informacao'
     'mini-img mini-img mini-img';
     max-width: 80%;
     height: 100vh;
@@ -40,12 +65,11 @@ body{
 }
 .img{
     grid-area:mini-img;
-    max-width: 100%;
+    max-width: 55%;
     grid-gap: 20px ; /*espaçamento entre os itens*/
-    padding: 15px;
+    padding: 5px;
     border: var(--borda) 1px solid;
     border-radius: 8px;
-    margin: 20px;
     border: 1px solid red;
 }
 .caracteristicas{
@@ -57,7 +81,6 @@ body{
     grid-area: informacao;
     width: 100%;
     border: 1px solid red;
-    background-color: #000;
 }
 .caracteristicas div, 
 .galeria .imgGaleria img, 
@@ -73,10 +96,19 @@ body{
     width: 50%;
     margin: 15px auto 15px;
     padding: 15px;
+    background-color: #000;
+
 }
+.descriptionProduct{
+    background-color: #000;
+    width: 80%;
+    border-radius: 8px;
+    padding: 10px;
+}
+.caracteristicas h2,
 .caracteristicas p,
 .qtd input{
-    color: #000;
+    color: #ffffff;
 }
 .imgPrincipal{
     grid-area: imagem;
@@ -86,7 +118,7 @@ body{
 }
 .imgPrincipal img{
     margin-top: 10px;
-    width: 400px;
+    width: 20rem;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -96,8 +128,8 @@ body{
     align-items: center;
 }
 .galeria .imgGaleria img{
-    width: 200px;
-    height: 200px;
+    width: 9rem;
+    height: 10rem;
     box-shadow:  1px 3px 5px 0px #24242470 ;
 }
 .qtd input, .caracteristicas div {
