@@ -37,24 +37,27 @@
     .caracteristicas-conteiner{
         width: 100%;
         padding: 0px;
-        display:grid;
+        display: block;
+
+        /*display:grid;
         grid-template-columns: 28% 28% 28%;
         grid-template-rows: 50% 50%;
-        /*grid-template-areas: 'marca linha peso'
+        grid-template-areas: 'marca linha peso'
                             'tamanho  material material';
-        justify-items:center;*/
+        justify-items:center;
         grid-column-gap:25px;
         
-        grid-row-gap: 10px;
+        grid-row-gap: 10px;*/
     }
     .caracteristicas-conteiner .marca,
     .caracteristicas-conteiner .linha,
     .caracteristicas-conteiner .peso,
     .caracteristicas-conteiner .tamanho,
     .caracteristicas-conteiner .material{
-        width: 70%;
+        width: 50%;
+        margin: 20px auto;
     }
-
+/*
     .caracteristicas-conteiner .marca{
         grid-area: marca;
     }
@@ -70,5 +73,5 @@
     .caracteristicas-conteiner .material{
         grid-area: material;
         grid-column: 2 / 3;
-    }
+    }*/
 }
