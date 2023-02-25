@@ -33,29 +33,39 @@
         width: 100%;
     }
     .caracteristicas-conteiner{
+        width: 100%;
+        padding: 0px;
         display:grid;
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 28% 28% 28%;
         grid-template-rows: 50% 50%;
         grid-template-areas: 'marca linha peso'
-                            'tamanho material';
+                            'tamanho  material material';
+        grid-column-gap:25px;
+        
+        grid-row-gap: 10px;
     }
+    .caracteristicas-conteiner .marca,
+    .caracteristicas-conteiner .linha,
+    .caracteristicas-conteiner .peso,
+    .caracteristicas-conteiner .tamanho,
+    .caracteristicas-conteiner .material{
+        width: 70%;
+    }
+
     .caracteristicas-conteiner .marca{
         grid-area: marca;
     }
     .caracteristicas-conteiner .linha{
         grid-area: linha;
-
     }
     .caracteristicas-conteiner .peso{
         grid-area: peso;
-
     }
     .caracteristicas-conteiner .tamanho{
         grid-area: tamanho;
-
     }
     .caracteristicas-conteiner .material{
         grid-area: material;
-
+        width: 90%;
     }
 }
