@@ -1,4 +1,9 @@
 @media (max-width: 600px) {
+    body div {
+        border: 1px solid red;
+
+    }
+
     .produto {
         display: block;
     }
@@ -6,7 +11,51 @@
     .galeria {
         display: none;
     }
-    .caracteristicas-conteiner div:nth-child(4){
+
+    .comprar,
+    .addFav {
+        text-align: center;
+    }
+
+    /*menu*/
+    .header .menu ul {
+        text-align: center;
+        display: block;
+
+    }
+
+    /*info do poduto*/
+    .infoProduct {
+        padding: 0px;
+    }
+
+    .infoProduct div {
         width: 100%;
+    }
+    .caracteristicas-conteiner{
+        display:grid;
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 50% 50%;
+        grid-template-areas: 'marca linha peso'
+                            'tamanho material';
+    }
+    .caracteristicas-conteiner .marca{
+        grid-area: marca;
+    }
+    .caracteristicas-conteiner .linha{
+        grid-area: linha;
+
+    }
+    .caracteristicas-conteiner .peso{
+        grid-area: peso;
+
+    }
+    .caracteristicas-conteiner .tamanho{
+        grid-area: tamanho;
+
+    }
+    .caracteristicas-conteiner .material{
+        grid-area: material;
+
     }
 }

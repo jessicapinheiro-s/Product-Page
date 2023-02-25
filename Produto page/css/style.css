@@ -52,7 +52,6 @@ body {
 /*Informações do produto*/
 .infoProduct {
     grid-area: informacao;
-    width: 100%;
 }
 /*imagem principal(maior)*/
 .imgPrincipal {
@@ -90,10 +89,7 @@ body {
 .qtd input {
     color: #ffffff;
 }
-.infoProduct div,
-.infoProduct hr {
-    padding: 0px 40px 0px 40px;
-}
+
 .infoProduct hr{
     width: 80%;
 }
@@ -154,7 +150,8 @@ body {
     border: var(--description) 1px solid;
     outline: none;
 }
-.comprar button {
+.comprar button,
+.addFav button {
     border: none;
     padding: 20px;
     background-color: #7a0404;
@@ -162,4 +159,8 @@ body {
 }
 .comprar button:hover {
     background-color: #920a0a;
+}
+.addFav button {
+    width: 50%;
+
 }
