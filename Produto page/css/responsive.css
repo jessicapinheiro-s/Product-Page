@@ -1,0 +1,12 @@
+@media (max-width: 600px) {
+    .produto {
+        display: block;
+    }
+
+    .galeria {
+        display: none;
+    }
+    .caracteristicas-conteiner div:nth-child(4){
+        width: 100%;
+    }
+}
