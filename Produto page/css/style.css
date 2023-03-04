@@ -52,6 +52,7 @@ body div {
 
 .produto {
     width: 80%;
+    height: 100%;
     margin: auto;
     border: 1px solid blue;
     display: grid;
@@ -61,8 +62,9 @@ body div {
         'mini-img imagem informacao'
         'mini-img  info-basic informacao';
     z-index: 2;
+    
     grid-column-gap: 20px;
-    grid-row-gap: 20px;
+    grid-row-gap: 10px;
     background-color: #fcb881;
 
 }
@@ -77,15 +79,12 @@ body div {
 .imgPrincipal {
     grid-area: imagem;
     text-align: center;
-    width: 100%;
     background-color: #fff0bd;
-
 }
 
 /*mini imagens*/
 .img {
     background-color: #aed9ff;
-
     grid-area: mini-img;
     /*espaçamento entre os itens*/
     border: var(--borda) 1px solid;
@@ -96,7 +95,8 @@ body div {
 .caracteristicas {
     grid-area: info-basic;
     background-color: #c1fcaa;
-
+    display: flex;
+    align-items: center;
 }
 
 .caracteristicas-conteiner {
@@ -168,16 +168,19 @@ body div {
 }
 
 .imgPrincipal img {
-    width: 24rem;
+    width: 22rem;
 }
 
 .galeria .imgGaleria img {
     width: 8rem;
 }
-.galeria .imgGaleria{
+
+.galeria .imgGaleria {
     text-align: center;
-    margin: 20px auto 20px;
+    margin: 10px auto 10px;
+
 }
+
 .qtd input,
 .caracteristicas div {
     text-align: center;
