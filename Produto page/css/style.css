@@ -216,8 +216,23 @@ body {
     transition: 0.5s;
     font-size: 1rem;
 }
-#btAddCarrinho{
+
+#btAddCarrinho {
     margin-right: 20px;
+}
+
+#addQtd,
+#DiminQtd {
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    width: 50px;
+    font-size: 1.5rem;
+}
+#addQtd:hover,
+#DiminQtd:hover {
+    color: #fff;
+    background-color: #000;
 }
 
 /*MENU REPSONISVO*/
@@ -231,10 +246,12 @@ body {
     position: absolute;
     right: 0;
 }
-.barra-fixa-carrinho{
+
+.barra-fixa-carrinho {
     display: none;
 }
-.barra-fixa-carrinho.ativada{
+
+.barra-fixa-carrinho.ativada {
     display: block;
     position: fixed;
     bottom: 0;
@@ -243,7 +260,17 @@ body {
     background-color: var(--cor-secundaria);
     border-radius: 10px 10px 0px 0px;
 }
-.carrinho-content{
+
+.carrinho-content {
     padding: 20px 40px;
-    
+
+}
+
+.quantidade-add-carrinho,
+.carrinho-content p {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.quantidade-add-carrinho{
+    padding: 0px 10px;
 }
