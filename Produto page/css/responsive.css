@@ -39,8 +39,7 @@
     /*caracteristicas do produto box preta*/
     .caracteristicas-conteiner {
         width: 100%;
-        padding: 0px;
-        /*display: block;*/
+        margin: 20px 0px;
 
         display:grid;
         grid-template-columns: 50% 50%;
