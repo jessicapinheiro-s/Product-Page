@@ -8,10 +8,6 @@ body {
     font-size: 1rem;
 }
 
-body div {
-    border: 1px solid red;
-}
-
 /*cabeçalho*/
 .header {
     background-color: #000;
@@ -53,8 +49,7 @@ body div {
 .produto {
     width: 80%;
     height: 100%;
-    margin: auto;
-    border: 1px solid blue;
+    margin: 40px auto;
     display: grid;
     grid-template-rows: 80% 15%;
     grid-template-columns: 150px 1fr 30%;
@@ -65,26 +60,21 @@ body div {
     
     grid-column-gap: 20px;
     grid-row-gap: 10px;
-    background-color: #fcb881;
-
 }
 
 /*Informações do produto*/
 .infoProduct {
     grid-area: informacao;
-    background-color: aliceblue;
 }
 
 /*imagem principal(maior)*/
 .imgPrincipal {
     grid-area: imagem;
     text-align: center;
-    background-color: #fff0bd;
 }
 
 /*mini imagens*/
 .img {
-    background-color: #aed9ff;
     grid-area: mini-img;
     /*espaçamento entre os itens*/
     border: var(--borda) 1px solid;
@@ -94,7 +84,6 @@ body div {
 /*conteineres pretos*/
 .caracteristicas {
     grid-area: info-basic;
-    background-color: #c1fcaa;
     display: flex;
     align-items: center;
 }
@@ -181,8 +170,14 @@ body div {
     margin: 10px auto 10px;
     border-radius: 8px;
     border: #e4e4e4c4 solid 1px;
+    transition: all 0.5s;
 }
 
+.galeria .imgGaleria:hover,
+.comprar button:hover,
+.addFav button:hover  {
+    transform: scale(1.1);
+}
 .qtd input,
 .caracteristicas div {
     text-align: center;
@@ -207,6 +202,7 @@ body div {
     background-color: #7a0404;
     color: #fff;
     border-radius: 10px;
+    transition: 0.5s;
 }
 
 .comprar button:hover {
