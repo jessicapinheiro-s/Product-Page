@@ -1,5 +1,4 @@
 @media (max-width: 600px) {
-    
     .produto {
         display: block;
     }
@@ -60,7 +59,7 @@
     }
 
     #icon-menu-responsivo {
-        display: block;
+        opacity: 1;
     }
 
     #icon-menu-responsivo i {
@@ -72,33 +71,38 @@
     #icon-menu-responsivo.mostrar {
         display: block;
     }
-    .menu-conteiner-responsive.mostrar{
-        transition: all 0.5s;
+
+    .menu-conteiner-responsive.mostrar {
         width: 60%;
-        height: 300px;
-        position:   absolute;
-        right: 0%;
+        height: 100vh;
         background-color: #ffffff;
         border-radius: 10px;
+        opacity: 1;
+        transition: height 1s ease 0s;
+        transition: opacity 1s ease 0s;
     }
-    .menu-conteiner-responsive.mostrar .menu{
-        padding: 15px 30px;
+
+    .menu-conteiner-responsive.mostrar .menu {
+        padding: 0px 30px;
     }
+
     .menu-conteiner-responsive.mostrar .menu .menu-list {
         list-style: none;
     }
+
     .menu-conteiner-responsive.mostrar .menu .menu-list li {
         margin: 20px 0px 20px;
         color: #000000;
         padding: 15px;
         border-radius: 10px;
         transition: all 0.5s;
-        
     }
+
     .menu-conteiner-responsive.mostrar .menu .menu-list li:hover {
         background-color: #0a8ec2;
         transform: scale(1.1);
     }
+
     /*
     .caracteristicas-conteiner .marca{
         grid-area: marca;

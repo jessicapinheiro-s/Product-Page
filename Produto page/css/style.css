@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+:root {
+    --cor-secundaria: #0a8ec2;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
@@ -57,7 +61,7 @@ body {
         'mini-img imagem informacao'
         'mini-img  info-basic informacao';
     z-index: 2;
-    
+
     grid-column-gap: 20px;
     grid-row-gap: 10px;
 }
@@ -174,10 +178,11 @@ body {
 }
 
 .galeria .imgGaleria:hover,
-.comprar button:hover,
-.addFav button:hover  {
+#btAddCarrinho:hover,
+#btAddFav:hover {
     transform: scale(1.1);
 }
+
 .qtd input,
 .caracteristicas div {
     text-align: center;
@@ -195,26 +200,34 @@ body {
     outline: none;
 }
 
-.comprar button,
-.addFav button {
+.produto-buttons {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+#btAddCarrinho,
+#btAddFav {
     border: none;
     padding: 20px;
-    background-color: #7a0404;
+    background-color: var(--cor-secundaria);
     color: #fff;
     border-radius: 10px;
     transition: 0.5s;
+    font-size: 1rem;
+}
+#btAddCarrinho{
+    margin-right: 20px;
 }
 
-.comprar button:hover {
-    background-color: #920a0a;
-}
-
-.addFav button {
-    width: 50%;
-
-}
 /*MENU REPSONISVO*/
 .menu-conteiner-responsive,
-.icon-menu-responsivo{
-    display: none;
+.icon-menu-responsivo {
+    opacity: 0;
+}
+
+.menu-conteiner-responsive {
+    opacity: 0;
+    position: absolute;
+    right: 0;
 }
