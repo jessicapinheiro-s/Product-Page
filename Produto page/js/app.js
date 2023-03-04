@@ -36,4 +36,19 @@ document.getElementById('DiminQtd').addEventListener('click', function diminMeno
 })
 
 
+document.getElementById('btAddFav').addEventListener('click', function openMenu(){
+    let containerPrincipal = document.querySelector('.conteiner-addFavorite');
 
+    let divCad = document.createElement('div');
+
+    divCad.style.display = 'block';
+    divCad.setAttribute('class', 'carAddFavorite');
+    containerPrincipal.appendChild(divCad);
+    
+    
+    let pFrase = document.createElement('p');
+    //let txtFrase = document.createTextNode = ('Item adicionado aos Favoritos com sucesso!');
+    pFrase.textContent = 'Item adicionado aos Favoritos com sucesso!';
+    //pFrase.appendChild(txtFrase);
+    divCad.appendChild(pFrase);
+})

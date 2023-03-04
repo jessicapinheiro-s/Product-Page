@@ -274,3 +274,14 @@ body {
 .quantidade-add-carrinho{
     padding: 0px 10px;
 }
+
+/*card add to favorite*/
+.carAddFavorite{
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+    display: none;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+}
