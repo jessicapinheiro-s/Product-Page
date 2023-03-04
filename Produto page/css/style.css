@@ -107,9 +107,10 @@ body div {
 }
 
 .caracteristicas-conteiner div {
-    width: 10%;
+    width: 12%;
     padding: 15px;
     background-color: #000;
+    border-radius: 8px;
 }
 
 .caracteristicas-conteiner h2,
@@ -178,7 +179,8 @@ body div {
 .galeria .imgGaleria {
     text-align: center;
     margin: 10px auto 10px;
-
+    border-radius: 8px;
+    border: #e4e4e4c4 solid 1px;
 }
 
 .qtd input,
@@ -198,17 +200,13 @@ body div {
     outline: none;
 }
 
-.comprar,
-.addFav {
-    text-align: center;
-}
-
 .comprar button,
 .addFav button {
     border: none;
     padding: 20px;
     background-color: #7a0404;
     color: #fff;
+    border-radius: 10px;
 }
 
 .comprar button:hover {
