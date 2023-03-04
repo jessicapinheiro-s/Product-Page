@@ -27,15 +27,13 @@
     .infoProduct div {
         width: 100%;
     }
-    .imgPrincipal{
+
+    .imgPrincipal {
         text-align: center;
-        border: 1px solid red;
     }
 
-    .imgPrincipal img{
+    .imgPrincipal img {
         width: 18rem;
-        border: 1px solid red;
-
     }
 
     /*caracteristicas do produto box preta*/
@@ -116,6 +114,7 @@
     .produto-buttons {
         justify-content: space-around;
     }
+
     /*
     .caracteristicas-conteiner .marca{
         grid-area: marca;
