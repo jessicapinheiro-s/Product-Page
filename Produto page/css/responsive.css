@@ -61,7 +61,6 @@
 
     #icon-menu-responsivo {
         display: block;
-        border: 1px solid red;
     }
 
     #icon-menu-responsivo i {
@@ -91,12 +90,14 @@
     .menu-conteiner-responsive.mostrar .menu .menu-list li {
         margin: 20px 0px 20px;
         color: #000000;
-        height: 40px;
+        padding: 15px;
         border-radius: 10px;
+        transition: all 0.5s;
         
     }
     .menu-conteiner-responsive.mostrar .menu .menu-list li:hover {
         background-color: #0a8ec2;
+        transform: scale(1.1);
     }
     /*
     .caracteristicas-conteiner .marca{
