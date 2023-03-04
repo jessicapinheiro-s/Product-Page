@@ -231,3 +231,17 @@ body {
     position: absolute;
     right: 0;
 }
+.barra-fixa-carrinho{
+    display: none;
+}
+.barra-fixa-carrinho.ativada{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--cor-secundaria);
+}
+.carrinho-content{
+    padding: 20px 40px;
+}
