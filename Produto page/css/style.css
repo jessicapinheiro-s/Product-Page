@@ -55,21 +55,22 @@ body div {
     margin: auto;
     border: 1px solid blue;
     display: grid;
-    grid-template-rows: 70% 15%;
-    grid-template-columns: 200px 1fr 30%;
+    grid-template-rows: 80% 15%;
+    grid-template-columns: 150px 1fr 30%;
     grid-template-areas:
         'mini-img imagem informacao'
         'mini-img  info-basic informacao';
-    height: 100vh;
     z-index: 2;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+    background-color: #fcb881;
 
 }
 
 /*Informações do produto*/
 .infoProduct {
     grid-area: informacao;
+    background-color: aliceblue;
 }
 
 /*imagem principal(maior)*/
@@ -77,27 +78,31 @@ body div {
     grid-area: imagem;
     text-align: center;
     width: 100%;
+    background-color: #fff0bd;
+
 }
 
 /*mini imagens*/
 .img {
+    background-color: #aed9ff;
+
     grid-area: mini-img;
     /*espaçamento entre os itens*/
     border: var(--borda) 1px solid;
-    padding: 10px;
+
 }
 
 /*conteineres pretos*/
 .caracteristicas {
-    width: 100%;
     grid-area: info-basic;
+    background-color: #c1fcaa;
+
 }
 
 .caracteristicas-conteiner {
     display: flex;
     margin: 0 auto;
-    width: 80%;
-    padding: 15px;
+    width: 100%;
     justify-content: space-between;
 }
 
@@ -167,15 +172,12 @@ body div {
 }
 
 .galeria .imgGaleria img {
-    width: 10rem;
-    height: 10rem;
-    border: 1px solid #e4e4e4;
+    width: 8rem;
 }
-
-.galeria div {
-    margin: 30px 0px 30px;
+.galeria .imgGaleria{
+    text-align: center;
+    margin: 20px auto 20px;
 }
-
 .qtd input,
 .caracteristicas div {
     text-align: center;
@@ -192,10 +194,12 @@ body div {
     border: var(--description) 1px solid;
     outline: none;
 }
+
 .comprar,
-.addFav{
+.addFav {
     text-align: center;
 }
+
 .comprar button,
 .addFav button {
     border: none;
