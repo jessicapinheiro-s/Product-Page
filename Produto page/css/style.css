@@ -241,7 +241,9 @@ body {
     left: 0;
     right: 0;
     background-color: var(--cor-secundaria);
+    border-radius: 10px 10px 0px 0px;
 }
 .carrinho-content{
     padding: 20px 40px;
+    
 }

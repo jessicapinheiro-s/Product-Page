@@ -15,11 +15,24 @@ document.getElementById('btAddCarrinho').addEventListener('click', function addA
 
 document.getElementById('addQtd').addEventListener('click', function addMaisCarrinho(){
     let spanQtdCarrinho = document.querySelector('.quantidade-add-carrinho');
+    
+    if(qtdCarrinho >0){
+        qtdCarrinho++;
+        spanQtdCarrinho.innerHTML=`${qtdCarrinho}`;
+        document.getElementById("DiminQtd").disabled = false;
+
+    }
    
 })
 document.getElementById('DiminQtd').addEventListener('click', function diminMenosCarrinho(){
     let spanQtdCarrinho = document.querySelector('.quantidade-add-carrinho');
-    
+    qtdCarrinho--;
+    spanQtdCarrinho.innerHTML=`${qtdCarrinho}`;
+
+    if(qtdCarrinho == 0){
+        document.getElementById("DiminQtd").disabled = true;
+        document.querySelector('.barra-fixa-carrinho').classList.remove('ativada');
+    }
 })
 
 
