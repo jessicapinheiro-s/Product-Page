@@ -27,6 +27,16 @@
     .infoProduct div {
         width: 100%;
     }
+    .imgPrincipal{
+        text-align: center;
+        border: 1px solid red;
+    }
+
+    .imgPrincipal img{
+        width: 18rem;
+        border: 1px solid red;
+
+    }
 
     /*caracteristicas do produto box preta*/
     .caracteristicas-conteiner {
