@@ -41,29 +41,33 @@
         width: 100%;
         margin: 20px 0px;
 
-        display:grid;
+        display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows:  30% 30% 30%;
+        grid-template-rows: 30% 30% 30%;
         grid-template-areas: 'marca linha'
-                            'peso tamanho'
-                            'material material';
+            'peso tamanho'
+            'material material';
         justify-items: center;
         grid-row-gap: 20px;
     }
 
-    .caracteristicas-conteiner .marca{
+    .caracteristicas-conteiner .marca {
         grid-area: marca;
     }
-    .caracteristicas-conteiner .linha{
+
+    .caracteristicas-conteiner .linha {
         grid-area: linha;
     }
-    .caracteristicas-conteiner .peso{
+
+    .caracteristicas-conteiner .peso {
         grid-area: peso;
     }
-    .caracteristicas-conteiner .tamanho{
+
+    .caracteristicas-conteiner .tamanho {
         grid-area: tamanho;
     }
-    .caracteristicas-conteiner .material{
+
+    .caracteristicas-conteiner .material {
         grid-area: material;
     }
 
@@ -129,6 +133,13 @@
         justify-content: space-around;
     }
 
-    
-    
+    .carAddFavorite {
+        left: 2%;
+        top: 25%;
+    }
+
+    #conteiner-addFavorite{
+        height: 1400px;
+    }
+
 }

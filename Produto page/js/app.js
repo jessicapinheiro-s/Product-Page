@@ -37,8 +37,8 @@ document.getElementById('DiminQtd').addEventListener('click', function diminMeno
 
 
 document.getElementById('btAddFav').addEventListener('click', function openMenu(){
-    let containerPrincipal = document.querySelector('.conteiner-addFavorite');
-
+    let containerPrincipal = document.getElementById('conteiner-addFavorite');
+    containerPrincipal.style.display = 'block';
     let divCad = document.createElement('div');
 
     divCad.style.display = 'block';
@@ -51,4 +51,16 @@ document.getElementById('btAddFav').addEventListener('click', function openMenu(
     pFrase.textContent = 'Item adicionado aos Favoritos com sucesso!';
     //pFrase.appendChild(txtFrase);
     divCad.appendChild(pFrase);
+
+    let btFechar = document.createElement('button');
+    
+    btFechar.textContent = 'Fechar';
+    btFechar.setAttribute('id', 'btFechar');
+    divCad.appendChild(btFechar);
+    
+    document.getElementById('btFechar').addEventListener('click', function fecharCardAddCarrinho(){
+        document.getElementById('conteiner-addFavorite').style.display ='none';
+        document.getElementById('divCard').style.display ='none';
+    })
+    
 })

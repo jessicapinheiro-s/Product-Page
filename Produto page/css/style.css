@@ -179,7 +179,8 @@ body {
 
 .galeria .imgGaleria:hover,
 #btAddCarrinho:hover,
-#btAddFav:hover {
+#btAddFav:hover,
+#btFechar:hover {
     transform: scale(1.1);
 }
 
@@ -282,6 +283,35 @@ body {
     position: absolute;
     display: none;
     z-index: 5;
-    top: 50%;
-    left: 50%;
+    top: 35%;
+    left: 35%;
+    padding: 20px 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 1px 3px 5px 3px rgba(155, 155, 155, 0.205);
+
+}
+#conteiner-addFavorite{
+    z-index: 5;
+    height: 700px;
+    display: none;
+    position: absolute;
+    top:  0%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: rgba(255, 255, 255, 0.767);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+#btFechar{
+    background-color: var(--cor-secundaria);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: all 0.5s ;
+    width: 40%;
+    margin: 10px 0px ;
+    color: #fff;
 }
