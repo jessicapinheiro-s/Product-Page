@@ -1,9 +1,5 @@
 @media (max-width: 600px) {
-    body div {
-        border: 1px solid red;
-
-    }
-
+    
     .produto {
         display: block;
     }
@@ -34,7 +30,7 @@
     }
 
     /*caracteristicas do produto box preta*/
-    .caracteristicas-conteiner{
+    .caracteristicas-conteiner {
         width: 100%;
         padding: 0px;
         display: block;
@@ -49,15 +45,60 @@
         
         grid-row-gap: 10px;*/
     }
+
     .caracteristicas-conteiner .marca,
     .caracteristicas-conteiner .linha,
     .caracteristicas-conteiner .peso,
     .caracteristicas-conteiner .tamanho,
-    .caracteristicas-conteiner .material{
+    .caracteristicas-conteiner .material {
         width: 50%;
         margin: 20px auto;
     }
-/*
+
+    .menu-conteiner {
+        display: none;
+    }
+
+    #icon-menu-responsivo {
+        display: block;
+        border: 1px solid red;
+    }
+
+    #icon-menu-responsivo i {
+        color: #fff;
+        font-size: 2rem;
+    }
+
+    .menu-conteiner-responsive.mostrar,
+    #icon-menu-responsivo.mostrar {
+        display: block;
+    }
+    .menu-conteiner-responsive.mostrar{
+        transition: all 0.5s;
+        width: 60%;
+        height: 300px;
+        position:   absolute;
+        right: 0%;
+        background-color: #ffffff;
+        border-radius: 10px;
+    }
+    .menu-conteiner-responsive.mostrar .menu{
+        padding: 15px 30px;
+    }
+    .menu-conteiner-responsive.mostrar .menu .menu-list {
+        list-style: none;
+    }
+    .menu-conteiner-responsive.mostrar .menu .menu-list li {
+        margin: 20px 0px 20px;
+        color: #000000;
+        height: 40px;
+        border-radius: 10px;
+        
+    }
+    .menu-conteiner-responsive.mostrar .menu .menu-list li:hover {
+        background-color: #0a8ec2;
+    }
+    /*
     .caracteristicas-conteiner .marca{
         grid-area: marca;
     }

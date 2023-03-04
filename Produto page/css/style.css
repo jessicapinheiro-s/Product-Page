@@ -213,3 +213,8 @@ body {
     width: 50%;
 
 }
+/*MENU REPSONISVO*/
+.menu-conteiner-responsive,
+.icon-menu-responsivo{
+    display: none;
+}
