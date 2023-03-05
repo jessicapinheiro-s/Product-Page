@@ -279,7 +279,7 @@ body {
 /*card add to favorite*/
 .carAddFavorite{
     background-color: #fff;
-    width: 300px;
+    width: 250px;
     position: absolute;
     display: none;
     z-index: 5;
@@ -293,16 +293,16 @@ body {
 }
 #conteiner-addFavorite{
     z-index: 5;
-    height: 700px;
+    height: 800px;
     display: none;
     position: absolute;
     top:  0%;
     bottom: 0%;
     left: 0%;
     right: 0%;
-    background-color: rgba(255, 255, 255, 0.767);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color:#8b8b8b69;
+    /*backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);*/
 }
 #btFechar{
     background-color: var(--cor-secundaria);
