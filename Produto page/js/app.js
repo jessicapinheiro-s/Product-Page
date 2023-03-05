@@ -1,7 +1,11 @@
+//qtd de itens no carrinho
+let qtdCarrinho = 0;
+//mostrar menu
 document.getElementById('icon-menu-responsivo').addEventListener('click', function openMenu() {
     document.querySelector('.menu-conteiner-responsive').classList.toggle('mostrar');
 })
-let qtdCarrinho = 0;
+
+//adicionar o item ao carrinho
 document.getElementById('btAddCarrinho').addEventListener('click', function addAoCarrinho() {
     document.querySelector('.barra-fixa-carrinho').classList.toggle('ativada');
     let spanQtdCarrinho = document.querySelector('.quantidade-add-carrinho');
@@ -13,6 +17,7 @@ document.getElementById('btAddCarrinho').addEventListener('click', function addA
 
 })
 
+//aumentar qtd de itens ao carrinho
 document.getElementById('addQtd').addEventListener('click', function addMaisCarrinho() {
     let spanQtdCarrinho = document.querySelector('.quantidade-add-carrinho');
 
@@ -24,6 +29,8 @@ document.getElementById('addQtd').addEventListener('click', function addMaisCarr
     }
 
 })
+
+//diminuir qtd de itens ao carrinho
 document.getElementById('DiminQtd').addEventListener('click', function diminMenosCarrinho() {
     let spanQtdCarrinho = document.querySelector('.quantidade-add-carrinho');
     qtdCarrinho--;
@@ -35,8 +42,8 @@ document.getElementById('DiminQtd').addEventListener('click', function diminMeno
     }
 })
 
-
-document.getElementById('btAddFav').addEventListener('click', function openMenu() {
+//add item aos favoritos
+document.getElementById('btAddFav').addEventListener('click', function addFavorite() {
     let containerPrincipal = document.getElementById('conteiner-addFavorite');
     containerPrincipal.style.display = 'block';
     let divCad = document.createElement('div');
@@ -74,6 +81,8 @@ document.getElementById('btAddFav').addEventListener('click', function openMenu(
 
 })
 
+//fechar aba de carrinho
 document.getElementById('btComprar').addEventListener('click', function fecharAbaCarrinho() {
     document.querySelector('.barra-fixa-carrinho').classList.remove('ativada');
+
 })
