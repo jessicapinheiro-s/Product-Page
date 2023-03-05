@@ -180,7 +180,8 @@ body {
 .galeria .imgGaleria:hover,
 #btAddCarrinho:hover,
 #btAddFav:hover,
-#btFechar:hover {
+#btFechar:hover,
+#btComprar:hover {
     transform: scale(1.1);
 }
 
@@ -207,34 +208,7 @@ body {
     width: 100%;
 }
 
-#btAddCarrinho,
-#btAddFav {
-    border: none;
-    padding: 20px;
-    background-color: var(--cor-secundaria);
-    color: #fff;
-    border-radius: 10px;
-    transition: 0.5s;
-    font-size: 1rem;
-}
 
-#btAddCarrinho {
-    margin-right: 20px;
-}
-
-#addQtd,
-#DiminQtd {
-    padding: 10px;
-    background-color: #fff;
-    border: none;
-    width: 50px;
-    font-size: 1.5rem;
-}
-#addQtd:hover,
-#DiminQtd:hover {
-    color: #fff;
-    background-color: #000;
-}
 
 /*MENU REPSONISVO*/
 .menu-conteiner-responsive,
@@ -264,20 +238,25 @@ body {
 
 .carrinho-content {
     padding: 20px 40px;
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
+
+
 
 .quantidade-add-carrinho,
 .carrinho-content p {
     font-size: 1.2rem;
     font-weight: 600;
 }
-.quantidade-add-carrinho{
+
+.quantidade-add-carrinho {
     padding: 0px 10px;
 }
 
 /*card add to favorite*/
-.carAddFavorite{
+.carAddFavorite {
     background-color: #fff;
     width: 250px;
     position: absolute;
@@ -291,27 +270,70 @@ body {
     box-shadow: 1px 3px 5px 3px rgba(155, 155, 155, 0.205);
 
 }
-#conteiner-addFavorite{
+
+#conteiner-addFavorite {
     z-index: 5;
     height: 800px;
     display: none;
     position: absolute;
-    top:  0%;
+    top: 0%;
     bottom: 0%;
     left: 0%;
     right: 0%;
-    background-color:#8b8b8b69;
+    background-color: #8b8b8b69;
     /*backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);*/
 }
-#btFechar{
+
+/*BOTÕES*/
+#btFechar {
     background-color: var(--cor-secundaria);
     padding: 10px;
     border: none;
     border-radius: 10px;
     font-size: 1.2rem;
-    transition: all 0.5s ;
+    transition: all 0.5s;
     width: 40%;
-    margin: 10px 0px ;
+    margin: 10px 0px;
     color: #fff;
+}
+
+#btComprar {
+    background-color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: all 0.5s;
+    width: 100%;
+}
+
+#btAddCarrinho,
+#btAddFav {
+    border: none;
+    padding: 20px;
+    background-color: var(--cor-secundaria);
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-size: 1rem;
+}
+
+#btAddCarrinho {
+    margin-right: 20px;
+}
+
+#addQtd,
+#DiminQtd {
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    width: 50px;
+    font-size: 1.5rem;
+}
+
+#addQtd:hover,
+#DiminQtd:hover {
+    color: #fff;
+    background-color: #000;
 }

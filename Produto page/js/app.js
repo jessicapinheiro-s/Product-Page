@@ -59,7 +59,7 @@ document.getElementById('btAddFav').addEventListener('click', function openMenu(
 
     let imgCoracaoFav = document.createElement('img');
     imgCoracaoFav.style.width = '60px';
-    
+
     imgCoracaoFav.src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAPFJREFUSEvFlW0RwjAQRF8dIAEHgAKQgANAAVpQADhAAjgAB0jAAcx2Qidt03y0DeRX0pvuy17ukoLMo8isz98Aa2ADzI3DJ3AALmat+B6YmvUdOFvxKjFNBxPgCEjANa7m46ojrg3sgNc33gRoJ7OB5yKNhQuwNbsfqF/+LhcnTWwHsr8cQx24AWUabcB7JPFadn4KyJ6i7Ies3I1Rpg+rQVtXhRpNqerbCxJX9XQ2mlz0hbTEm2VqV2kqxCnuA6Q46RQPAWIgXvEYgA8SFI8FuCBR4ikAG6J5rRR9d1jqk6nq0qjqPHRBpgJCeq14dsAHaAYwGXy+lBAAAAAASUVORK5CYII=';
 
     divCad.appendChild(imgCoracaoFav);
@@ -72,4 +72,8 @@ document.getElementById('btAddFav').addEventListener('click', function openMenu(
         document.getElementById('divCard').style.display = 'none';
     })
 
+})
+
+document.getElementById('btComprar').addEventListener('click', function fecharAbaCarrinho() {
+    document.querySelector('.barra-fixa-carrinho').classList.remove('ativada');
 })
